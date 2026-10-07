@@ -1,24 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My IT Portfolio & Web Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #38bdf8;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My IT Website</h1>
-    <p>Computer Technician student & IT enthusiast showcasing my journey.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="IT Portfolio and Web Project for a computer technician student and IT enthusiast."
+    />
+    <title>IT Portfolio | Tech Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">IT</span>
+          <span>StudentTech</span>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Computer Technician Student</p>
+            <h1>Building better digital experiences and reliable tech support.</h1>
+            <p class="lead">
+              I’m an IT enthusiast focused on troubleshooting, systems support,
+              and creative web solutions. I combine technical problem-solving with
+              hands-on learning to help people and businesses stay connected and efficient.
+            </p>
+            <div class="cta-group">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button secondary" href="#contact">Get in Touch</a>
+            </div>
+            <ul class="hero-stats" aria-label="Key competencies">
+              <li><strong>2+</strong><span>Years Learning</span></li>
+              <li><strong>10+</strong><span>Technical Skills</span></li>
+              <li><strong>100%</strong><span>Curiosity-Driven</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Profile summary card">
+            <div class="card-glow"></div>
+            <div class="profile-box">
+              <div class="avatar">TS</div>
+              <div>
+                <p class="small-label">Profile</p>
+                <h2>Tech Student</h2>
+              </div>
+            </div>
+            <div class="info-list">
+              <div>
+                <span>Focus</span>
+                <strong>IT Support & Web Development</strong>
+              </div>
+              <div>
+                <span>Strengths</span>
+                <strong>Problem solving, diagnostics, setup</strong>
+              </div>
+              <div>
+                <span>Learning</span>
+                <strong>Hardware, networking, and systems</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Driven by technology and a passion for learning.</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                I’m a student in Computer Technology with a strong interest in IT support,
+                hardware troubleshooting, digital systems, and practical web projects.
+              </p>
+              <p>
+                My goal is to keep growing through real-world projects, collaborative learning,
+                and hands-on experience that turns technical knowledge into useful solutions.
+              </p>
+            </div>
+            <div class="quote-box">
+              “Technology should make life smoother, faster, and more reliable.”
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section muted">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Services</p>
+            <h2>What I can help with.</h2>
+          </div>
+          <div class="card-grid">
+            <article class="service-card">
+              <div class="icon">🖥️</div>
+              <h3>Computer Setup</h3>
+              <p>Operating system installation, configuration, and performance optimization.</p>
+            </article>
+            <article class="service-card">
+              <div class="icon">🔧</div>
+              <h3>Hardware Support</h3>
+              <p>Basic diagnostics, repairs, upgrades, and component troubleshooting.</p>
+            </article>
+            <article class="service-card">
+              <div class="icon">📡</div>
+              <h3>Networking Basics</h3>
+              <p>Connection setup, troubleshooting, and home or office network support.</p>
+            </article>
+            <article class="service-card">
+              <div class="icon">💻</div>
+              <h3>Web Projects</h3>
+              <p>Clean, responsive website design and digital portfolios for personal branding.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Core tools and technical abilities.</h2>
+          </div>
+          <div class="skills-wrap">
+            <span>Windows OS</span>
+            <span>Linux</span>
+            <span>Hardware Troubleshooting</span>
+            <span>Computer Maintenance</span>
+            <span>Networking</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>Problem Solving</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section muted">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Recent work and learning highlights.</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <span class="tag">Portfolio Website</span>
+              <h3>Personal IT Portfolio</h3>
+              <p>
+                A responsive portfolio created to showcase my skills, support services,
+                and technical interests in a modern digital format.
+              </p>
+            </article>
+            <article class="project-card">
+              <span class="tag">Lab Practice</span>
+              <h3>System Setup & Maintenance</h3>
+              <p>
+                Hands-on practice building, troubleshooting, and optimizing PC environments
+                for better stability and performance.
+              </p>
+            </article>
+            <article class="project-card">
+              <span class="tag">Learning Track</span>
+              <h3>Networking Fundamentals</h3>
+              <p>
+                Learning foundational networking concepts including connectivity, IP setup,
+                and device communication basics.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-box">
+          <div>
+            <p class="eyebrow">Let’s Connect</p>
+            <h2>Ready to build something useful together?</h2>
+          </div>
+          <a class="button primary" href="mailto:studenttech@example.com">studenttech@example.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> StudentTech</p>
+        <p>IT Student • Support • Web Solutions</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
