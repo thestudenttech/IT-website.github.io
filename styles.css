@@ -268,6 +268,90 @@ body {
     color: #fff;
 }
 
+/* TERMINAL STYLING */
+.terminal-window {
+    background-color: #010409;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.terminal-header {
+    background-color: var(--bg-secondary);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.red { background-color: #ff5f56; }
+.dot.yellow { background-color: #ffbd2e; }
+.dot.green { background-color: #27c93f; }
+
+.terminal-title {
+    margin-left: 10px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.terminal-body {
+    padding: 20px;
+    height: 250px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    color: #7ee787;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.terminal-output {
+    word-break: break-all;
+}
+
+.highlight-cmd {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.terminal-input-line {
+    background-color: #0d1117;
+    border-top: 1px solid var(--border-color);
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.prompt-symbol {
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#terminal-input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    width: 100%;
+    outline: none;
+}
+
 /* Services Grid */
 .card-grid, .project-grid {
     display: grid;
@@ -379,6 +463,6 @@ body {
         font-size: 2.2rem;
     }
     .nav-links {
-        display: none; /* can add mobile menu toggle later */
+        display: none;
     }
 }
