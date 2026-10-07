@@ -1,5 +1,8 @@
-// Automatically set the current year in the footer
-document.getElementById('year').textContent = new Date().getFullYear();
+// Automatically set the current year in the footer safely
+const yearElement = document.getElementById('year');
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
 
 // Interactive IT Terminal Logic
 const terminalInput = document.getElementById('terminal-input');
@@ -25,7 +28,7 @@ if (terminalInput) {
                     &nbsp;&nbsp;<strong>about</strong>    - Learn about Ntandoyenkosi<br>
                     &nbsp;&nbsp;<strong>skills</strong>   - View core technical abilities<br>
                     &nbsp;&nbsp;<strong>projects</strong> - View recent IT projects<br>
-                    &nbsp;&nbsp;<strong>contact</strong>  - Get GitHub link<br>
+                    &nbsp;&nbsp;<strong>contact</strong>  - Get email & GitHub links<br>
                     &nbsp;&nbsp;<strong>clear</strong>    - Clear terminal screen`;
                     break;
                 case 'about':
@@ -38,7 +41,7 @@ if (terminalInput) {
                     responseLine.textContent = "Projects: Personal IT Portfolio website, Cisco Network Topologies, and VMware Virtual Machine Labs.";
                     break;
                 case 'contact':
-                    responseLine.innerHTML = `GitHub: <a href="https://github.com/thestudenttech" target="_blank" style="color: #58a6ff;">github.com/thestudenttech</a>`;
+                    responseLine.innerHTML = `Email: <a href="mailto:Owethumkhwanazi9@gmail.com" style="color: #58a6ff;">Owethumkhwanazi9@gmail.com</a><br>GitHub: <a href="https://github.com/thestudenttech" target="_blank" style="color: #58a6ff;">github.com/thestudenttech</a>`;
                     break;
                 case 'clear':
                     terminalBody.innerHTML = '';
