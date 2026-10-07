@@ -20,6 +20,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     padding-bottom: 2rem;
+    scroll-behavior: smooth;
 }
 
 /* Header & Nav */
