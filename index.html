@@ -1,24 +1,145 @@
-<!-- Projects Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ntandoyenkosi Mthembu | IT Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <span class="logo">IT StudentTech</span>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#terminal-section">Terminal</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <p class="subtitle">Computer Technician Student</p>
+        <h1>Building reliable IT systems and modern web solutions.</h1>
+        <p class="hero-desc">
+            I'm Ntandoyenkosi Mthembu, an IT student at Elangeni TVET College focused on hardware assembly, networking configuration, systems support, and clean web design.
+        </p>
+        <div class="hero-cta">
+            <a href="#terminal-section" class="btn primary">Try Interactive Terminal</a>
+            <a href="#contact" class="btn secondary">Get in Touch</a>
+        </div>
+        <div class="hero-badges">
+            <span>⚡ TVET Elangeni Student</span>
+            <span>🛠️ 10+ Technical Skills</span>
+            <span>💻 100% Hands-On Learning</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>Profile</h2>
+        <div class="profile-card">
+            <h3>Ntandoyenkosi M</h3>
+            <p><strong>Focus:</strong> Computer Tech & Networking</p>
+            <p><strong>Institution:</strong> Elangeni TVET College</p>
+            <p><strong>Core Tools:</strong> Cisco Packet Tracer, VMware, Git</p>
+        </div>
+
+        <h3 class="section-subheading">Driven by a passion for computer hardware and systems.</h3>
+        <p>
+            As an Occupational Certificate Computer Technician student, I love getting hands-on with PC builds, troubleshooting hardware issues, and setting up simulated network topologies.
+        </p>
+        <p>
+            Whether it's configuring virtual machines in VMware or building this personal portfolio website, I am constantly exploring how hardware and software work together to solve real-world problems.
+        </p>
+        <blockquote class="quote">
+            “Technology should make life smoother, faster, and more reliable.”
+        </blockquote>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+        <h2>Services</h2>
+        <p class="section-desc">What I can help build, configure, and troubleshoot.</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>PC Hardware & Assembly</h3>
+                <p>Custom desktop builds, component upgrades, hardware diagnostics, and preventive maintenance.</p>
+            </div>
+            <div class="project-card">
+                <h3>Network Configuration</h3>
+                <p>Setting up local area networks, router/switch configurations, and simulated topologies using Cisco Packet Tracer.</p>
+            </div>
+            <div class="project-card">
+                <h3>Systems Support</h3>
+                <p>Windows and Linux OS installation, troubleshooting, virtual machine deployment in VMware, and software support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2>Technical Skills</h2>
+        <p class="section-desc">Tools, technologies, and methodologies I work with.</p>
+        <div class="profile-card">
+            <p><strong>Hardware:</strong> PC Assembly, Troubleshooting, Component Diagnostics</p>
+            <p><strong>Networking:</strong> Cisco Packet Tracer, Routing & Switching, Cabling</p>
+            <p><strong>Software & OS:</strong> Windows, Linux, VMware Workstation</p>
+            <p><strong>Web Development:</strong> HTML5, CSS3, JavaScript (ES6+), Git & GitHub</p>
+        </div>
+    </section>
+
+    <!-- Terminal Section -->
+    <section id="terminal-section" class="container">
+        <h2>Interactive IT Terminal</h2>
+        <p class="section-desc">Type commands below to explore my portfolio like a pro (try typing <code>help</code>).</p>
+        
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">guest@it-portfolio:~</span>
+            </div>
+            <div id="terminal-body" class="terminal-body">
+                <div class="terminal-welcome">
+                    Welcome to IT-Portfolio CLI v1.0.0<br>
+                    Type <span style="color: #58a6ff;">help</span> to see available commands.<br><br>
+                </div>
+            </div>
+            <div class="terminal-input-line">
+                <span class="prompt-symbol">guest@it-portfolio:~$</span>
+                <input type="text" id="terminal-input" autofocus autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Images -->
     <section id="projects" class="container">
         <h2>Projects & Work</h2>
         <p class="section-desc">Here are a few hands-on IT projects and labs I've worked on.</p>
         <div class="projects-grid">
             
-            <!-- Project 1 -->
             <div class="project-card">
                 <img src="images/portfolio-preview.png" alt="Portfolio Screenshot" class="project-img">
                 <h3>Personal IT Portfolio</h3>
                 <p>A responsive developer portfolio built with HTML, CSS, and vanilla JavaScript, featuring an interactive command-line terminal.</p>
             </div>
 
-            <!-- Project 2 -->
             <div class="project-card">
                 <img src="images/cisco-topology.png" alt="Cisco Network Topology" class="project-img">
                 <h3>Cisco Network Topologies</h3>
                 <p>Simulated multi-router enterprise network configurations utilizing Cisco Packet Tracer for optimal packet routing and security testing.</p>
             </div>
 
-            <!-- Project 3 -->
             <div class="project-card">
                 <img src="images/vmware-lab.png" alt="VMware Lab" class="project-img">
                 <h3>VMware Virtual Labs</h3>
@@ -27,3 +148,24 @@
 
         </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p class="section-desc">Have a question or want to work together? Get in touch!</p>
+        
+        <div class="profile-card">
+            <p><strong>Email:</strong> <a href="mailto:Owethumkhwanazi9@gmail.com" style="color: #58a6ff;">Owethumkhwanazi9@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/thestudenttech" target="_blank" style="color: #58a6ff;">github.com/thestudenttech</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year">2026</span> Ntandoyenkosi Mthembu. All rights reserved.</p>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
